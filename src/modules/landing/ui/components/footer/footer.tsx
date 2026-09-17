@@ -15,7 +15,7 @@ const legalLinks = [
 
 export const Footer = () => {
   return (
-    <footer className="relative w-full before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-[repeating-linear-gradient(to_right,rgba(255,255,255,0.2)_0_12px,transparent_12px_20px)]">
+    <footer className="relative w-full border-t border-white/20">
       <div className="mx-auto max-w-7xl flex w-full flex-col justify-between border-white/20 py-8 ">
         <div className="grid gap-12 md:grid-cols-[minmax(0,2fr)_1fr_1.3fr]">
           <div>

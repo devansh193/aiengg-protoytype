@@ -5,10 +5,15 @@ import Image from "next/image";
 export const HeroSection = () => {
   return (
     <div className="flex w-full min-h-[calc(100dvh-4rem)] flex-1 flex-col">
+      <div
+        aria-hidden
+        data-hero-edge="bottom"
+        className="h-px w-full bg-white/20"
+      />
       <div className="flex min-h-0 w-full flex-1 px-6">
-        <div className="relative mx-auto flex min-h-0 w-full max-w-7xl flex-1 flex-col overflow-hidden before:absolute before:inset-y-0 before:left-0 before:z-10 before:w-px before:bg-[repeating-linear-gradient(to_bottom,rgba(255,255,255,0.2)_0_12px,transparent_12px_20px)] after:absolute after:inset-y-0 after:right-0 after:z-10 after:w-px after:bg-[repeating-linear-gradient(to_bottom,rgba(255,255,255,0.2)_0_12px,transparent_12px_20px)]">
+        <div className="relative mx-auto flex min-h-0 w-full max-w-7xl flex-1 flex-col overflow-hidden border-x border-white/20">
           <Image
-            src="/images/hero.webp"
+            src="/images/hero1.webp"
             alt=""
             fill
             priority
@@ -40,7 +45,7 @@ export const HeroSection = () => {
       <div
         aria-hidden
         data-hero-edge="bottom"
-        className="h-px w-full bg-[repeating-linear-gradient(to_right,rgba(255,255,255,0.2)_0_12px,transparent_12px_20px)]"
+        className="h-px w-full bg-white/20"
       />
     </div>
   );
