@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { IoLogoGoogle } from "react-icons/io";
@@ -12,7 +13,7 @@ export const AuthPage = ({ mode }: AuthPageProps) => {
   return (
     <section className="grid h-screen bg-[#0A0A0A] text-white md:grid-cols-2">
       <div className="flex items-center justify-center px-6 py-20">
-        <div className="w-full max-w-md flex flex-col items-center justify-center">
+        <div className="w-full max-w-md flex flex-col items-center justify-center gap-y-4">
           <div className="sm:px-14">
             <h1 className="text-2xl font-medium leading-none tracking-[-0.04em] text-center">
               {isSignIn ? "Welcome back!" : "Create an account"}
@@ -24,13 +25,10 @@ export const AuthPage = ({ mode }: AuthPageProps) => {
             </p>
           </div>
 
-          <button
-            type="button"
-            className="mt-5 flex h-10 w-full cursor-pointer items-center justify-center gap-2 rounded-lg border border-white bg-linear-to-b from-white to-white/90 text-sm text-black font-medium shadow-[inset_0_1px_1px_rgba(255,255,255,0.18),0_2px_4px_rgba(0,0,0,0.45)] transition-colors hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-          >
+          <Button variant={"cta"} type="button" className="w-full">
             <IoLogoGoogle />
             {isSignIn ? "Sign in with Google" : "Sign up with Google"}
-          </button>
+          </Button>
 
           <p className="mt-4 text-center text-xs leading-5 text-white/45">
             By {isSignIn ? "signing in" : "signing up"}, you agree to our{" "}

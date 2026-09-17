@@ -58,7 +58,7 @@ export const FaqSection = () => {
       <div className="flex w-full px-6">
         <div className="mx-auto w-full max-w-7xl border-x border-white/20">
           <header className="flex flex-col items-center gap-4 border-b border-white/20 px-6 py-16 text-center">
-            <p className="text-sm text-[#E07A5F]">FAQs</p>
+            <p className="text-md text-blue-500">FAQs</p>
             <h2 className="text-4xl font-medium tracking-tight sm:text-5xl">
               Frequently asked questions
             </h2>

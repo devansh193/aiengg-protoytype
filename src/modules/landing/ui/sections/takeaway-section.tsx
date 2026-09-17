@@ -20,7 +20,7 @@ export const TakeawaySection = () => {
       <div className="flex w-full px-6">
         <div className="mx-auto w-full max-w-7xl border-x border-b border-white/20">
           <header className="flex flex-col items-center gap-4 px-6 py-16 text-center">
-            <p className="text-sm text-[#E07A5F]">What You Will Learn</p>
+            <p className="text-md text-blue-500">What You Will Learn</p>
             <h2 className="text-4xl font-medium tracking-tight sm:text-5xl">
               Key Takeaways
             </h2>

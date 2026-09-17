@@ -151,7 +151,7 @@ export const CohortOutline = () => {
       <div className="flex w-full px-6">
         <div className="mx-auto w-full max-w-7xl border-x border-b border-white/20">
           <header className="flex flex-col items-center gap-4 border-b border-white/20 px-6 py-16 text-center">
-            <p className="text-sm text-[#E07A5F]">Cohort Outline</p>
+            <p className="text-md text-blue-500">Cohort Outline</p>
             <h2 className="text-4xl font-medium tracking-tight sm:text-5xl">
               Eight weeks. Theory, then code.
             </h2>
@@ -170,7 +170,7 @@ export const CohortOutline = () => {
               >
                 <AccordionTrigger className="rounded-none px-6 py-6 hover:no-underline hover:bg-white/3">
                   <span className="flex min-w-0 flex-1 items-baseline gap-4">
-                    <span className="font-mono text-sm text-[#E07A5F]">
+                    <span className="font-mono text-sm text-blue-500">
                       {week.n}
                     </span>
                     <span className="min-w-0">

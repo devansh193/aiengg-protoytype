@@ -15,8 +15,8 @@ const legalLinks = [
 
 export const Footer = () => {
   return (
-    <footer className="relative w-full border-t border-white/20">
-      <div className="mx-auto max-w-7xl flex w-full flex-col justify-between border-white/20 py-8 ">
+    <footer className="relative w-full border-t border-white/20 ">
+      <div className="mx-auto max-w-6xl flex w-full flex-col justify-between border-white/20 py-8">
         <div className="grid gap-12 md:grid-cols-[minmax(0,2fr)_1fr_1.3fr]">
           <div>
             <Link href="/" className="inline-flex items-center gap-2 text-lg">

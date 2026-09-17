@@ -18,6 +18,7 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive/10 text-destructive hover:bg-destructive/20 focus-visible:border-destructive/40 focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40",
         link: "text-primary underline-offset-4 hover:underline",
+        cta: "relative overflow-hidden rounded-xl bg-linear-to-b from-[#4399ff] via-[#1680ff] to-[#006cf4] text-white ring-1 ring-inset ring-[#005ec9] shadow-[inset_0_2px_1px_rgba(255,255,255,0.28),inset_0_-2px_1px_rgba(0,62,166,0.42),0_2px_0_#0059bd,0_5px_12px_rgba(0,104,239,0.22)] transition-[filter,transform,box-shadow] hover:brightness-110 hover:shadow-[inset_0_2px_1px_rgba(255,255,255,0.34),inset_0_-2px_1px_rgba(0,62,166,0.38),0_2px_0_#0059bd,0_7px_16px_rgba(0,104,239,0.3)] active:shadow-[inset_0_2px_2px_rgba(0,58,155,0.35),0_1px_0_#0059bd] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#66adff]",
       },
       size: {
         default:
@@ -33,6 +34,13 @@ const buttonVariants = cva(
         "icon-lg": "size-9",
       },
     },
+    compoundVariants: [
+      {
+        variant: "cta",
+        size: "default",
+        class: "h-auto px-6 py-2.5",
+      },
+    ],
     defaultVariants: {
       variant: "default",
       size: "default",

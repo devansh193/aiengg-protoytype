@@ -21,7 +21,7 @@ export const InstructorSection = () => {
 
             <div className="flex min-h-104 flex-col px-2 py-5 sm:px-4 md:min-h-0 md:py-2">
               <div>
-                <p className="text-sm font-medium text-[#E07A5F]">Instructor</p>
+                <p className="text-md font-medium text-blue-500">Instructor</p>
                 <h2 className="mt-3 text-3xl font-medium tracking-tight sm:text-4xl">
                   Your Cohort Instructor
                 </h2>
