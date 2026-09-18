@@ -1,18 +1,45 @@
+import { HandsOnIllustration } from "@/modules/landing/ui/components/illustrations/hands-on-illustration";
+import { LearningPathIllustration } from "@/modules/landing/ui/components/illustrations/learning-path-illustration";
+import { LiveGuidanceIllustration } from "@/modules/landing/ui/components/illustrations/live-guidance-illustration";
+import { ReliableSystemsIllustration } from "@/modules/landing/ui/components/illustrations/reliable-systems-illustration";
+
 const takeaways = [
   {
-    title: "Ship production-grade AI code",
-    body: "Build reliable AI: Agents, RAG, MCP, vector DBs including Evals, guardrails, and observability.",
+    title: "Structured AI Learning Path",
+    body: [
+      "Go from LLM fundamentals to advanced AI systems through a clear, step-by-step curriculum.",
+      "Learn embeddings, RAG, advanced retrieval, agents, multi-agent systems, evaluation, and production architecture in the right sequence.",
+    ],
   },
   {
-    title: "Land AI Engineering roles",
-    body: "Prove it with a real-world capstone portfolio hiring managers can actually see.",
-    featured: true,
+    title: "Build Reliable AI Systems",
+    body: [
+      "Learn how to evaluate AI outputs, reduce hallucinations, add guardrails, and monitor system performance.",
+      "Build applications that are accurate, measurable, and reliable beyond simple demos.",
+    ],
   },
   {
-    title: "Become the AI expert on your team",
-    body: "Spot the right AI use cases and own the room; tradeoffs and decisions your team trusts.",
+    title: "Hands-on AI Engineering",
+    body: [
+      "Turn every major concept into working code through practical exercises and projects.",
+      "Build RAG pipelines, GraphRAG systems, tool-calling agents, hybrid search, reranking, and multi-agent workflows yourself.",
+    ],
+  },
+  {
+    title: "Live Guidance & Continued Support",
+    body: [
+      "Learn through 20 live instructor-led classes with regular opportunities to ask questions and get feedback.",
+      "Get weekly networking sessions, 90 days of implementation support, and lifetime access to all cohort recordings.",
+    ],
   },
 ] as const;
+
+const illustrations = {
+  "Structured AI Learning Path": LearningPathIllustration,
+  "Build Reliable AI Systems": ReliableSystemsIllustration,
+  "Hands-on AI Engineering": HandsOnIllustration,
+  "Live Guidance & Continued Support": LiveGuidanceIllustration,
+};
 
 export const TakeawaySection = () => {
   return (
@@ -24,24 +51,31 @@ export const TakeawaySection = () => {
             <h2 className="text-4xl font-medium tracking-tight sm:text-5xl">
               Key Takeaways
             </h2>
-            <p className="rounded-md border border-white/15 bg-white/5 px-5 py-2 text-sm text-white/60">
-              AI skills that are essential and job-relevant.
-            </p>
           </header>
-          <ul className="grid border-t border-white/20 md:grid-cols-3">
-            {takeaways.map((item) => (
-              <li
-                key={item.title}
-                className={`flex flex-col gap-2 p-8 md:border-r md:border-white/20 md:last:border-r-0 max-md:border-b max-md:border-white/20 max-md:last:border-b-0 ${
-                  "featured" in item && item.featured ? "bg-white/3" : ""
-                }`}
-              >
-                <h3 className="text-xl font-medium">{item.title}</h3>
-                <p className="max-w-sm text-sm leading-relaxed text-white/50">
-                  {item.body}
-                </p>
-              </li>
-            ))}
+          <ul className="grid border-t border-white/20 sm:grid-cols-2">
+            {takeaways.map((item) => {
+              const Illustration =
+                illustrations[item.title as keyof typeof illustrations];
+              return (
+                <li
+                  key={item.title}
+                  className="flex flex-col gap-3 p-8 border-white/20 max-sm:border-b max-sm:last:border-b-0 sm:odd:border-r sm:border-b sm:nth-last-[-n+2]:border-b-0"
+                >
+                  <h3 className="text-xl font-medium uppercase">
+                    {item.title}
+                  </h3>
+                  {item.body.map((paragraph) => (
+                    <p
+                      key={paragraph}
+                      className="text-sm leading-relaxed text-white/50"
+                    >
+                      {paragraph}
+                    </p>
+                  ))}
+                  {Illustration ? <Illustration /> : null}
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

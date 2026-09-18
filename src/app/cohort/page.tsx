@@ -12,7 +12,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+
 import {
   SidebarInset,
   SidebarProvider,
@@ -69,7 +69,10 @@ export default function CohortPage() {
               </div>
               <div className="flex items-start justify-between gap-2 px-4 pt-4 pb-3 bg-[#191A1C]">
                 <div>
-                  <Link href="/cohort/rag-and-agents" className="font-medium hover:underline">
+                  <Link
+                    href="/cohort/rag-and-agents"
+                    className="font-medium hover:underline"
+                  >
                     RAG and Agents
                   </Link>
                   <p className="text-sm text-muted-foreground">

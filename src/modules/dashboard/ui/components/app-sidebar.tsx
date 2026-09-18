@@ -46,7 +46,10 @@ export const AppSidebar = () => {
       style={{ "--sidebar": "#111213" } as React.CSSProperties}
     >
       <SidebarHeader className="border-b">
-        <Link href="/" className="flex items-center gap-2 overflow-hidden px-2 py-1.5">
+        <Link
+          href="/"
+          className="flex items-center gap-2 overflow-hidden px-2 py-1.5"
+        >
           <span className="flex size-6 shrink-0 items-center justify-center rounded-md bg-primary text-xs font-bold text-primary-foreground">
             A
           </span>
@@ -65,10 +68,10 @@ export const AppSidebar = () => {
             <SidebarMenu className="gap-1">
               <SidebarMenuItem>
                 <SidebarMenuButton asChild isActive>
-                  <a href="/cohort">
+                  <Link href="/cohort">
                     <GraduationCap />
                     <span>Cohorts</span>
-                  </a>
+                  </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
 
