@@ -176,7 +176,7 @@ export function ReliableSystemsIllustration() {
           </p>
         </div>
 
-        {/* App (center hub — larger, blue accent) */}
+        {/* App (center hub — larger, brand accent) */}
         <div className="absolute left-[42%] top-[50%] -translate-x-1/2 -translate-y-1/2">
           <div className="relative flex size-16 items-center justify-center rounded-xl border border-white/8 bg-neutral-950">
             <svg
@@ -194,7 +194,7 @@ export function ReliableSystemsIllustration() {
                 >
                   <stop offset="0%" stopColor="#ef4444" />
                   <stop offset="50%" stopColor="#22c55e" />
-                  <stop offset="100%" stopColor="#3b82f6" />
+                  <stop offset="100%" stopColor="#8536ec" />
                 </linearGradient>
               </defs>
               <motion.rect
@@ -233,9 +233,9 @@ export function ReliableSystemsIllustration() {
 
         {/* LLM (bottom pill — like "Connected") */}
         <div className="absolute left-[42%] top-[90%] -translate-x-1/2 -translate-y-1/2">
-          <div className="flex items-center gap-1.5 rounded-md border border-blue-500/40 bg-neutral-950 px-3 py-1">
-            <BrainIcon className="size-3.5 text-blue-400" />
-            <p className="text-[11px] font-medium text-blue-400">LLM</p>
+          <div className="flex items-center gap-1.5 rounded-md border border-violet-500/40 bg-neutral-950 px-3 py-1">
+            <BrainIcon className="size-3.5 text-violet-400" />
+            <p className="text-[11px] font-medium text-violet-400">LLM</p>
           </div>
         </div>
       </div>

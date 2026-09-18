@@ -38,7 +38,7 @@ const CYCLE = STEP * messages.length + TAIL;
 export function LiveGuidanceIllustration() {
   return (
     <div aria-hidden className="mt-auto w-full pt-6">
-      <div className="flex h-52 flex-col overflow-hidden border border-white/8 bg-neutral-950 sm:h-60">
+      <div className="flex h-52 flex-col overflow-hidde border border-white/8 bg-neutral-950 sm:h-60">
         <div className="flex items-center gap-2 border-b border-white/8 px-3 py-2">
           <div className="flex -space-x-1.5">
             {["P", "T", "A"].map((letter) => (
@@ -84,7 +84,7 @@ export function LiveGuidanceIllustration() {
                 <div
                   className={`rounded-2xl px-2.5 py-1.5 text-[10px] leading-snug ${
                     you
-                      ? "rounded-br-md bg-blue-500/15 text-blue-300"
+                      ? "rounded-br-md bg-violet-500/15 text-violet-300"
                       : "rounded-bl-md bg-white/6 text-white/60"
                   }`}
                 >

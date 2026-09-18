@@ -22,7 +22,7 @@ export function LearningPathIllustration() {
 
         <div className="pointer-events-none absolute inset-0 grid grid-cols-5 grid-rows-3 gap-1.5">
           <div className="z-0 col-start-2 col-span-3 row-start-1 flex items-center">
-            <div className="ml-[50%] h-px w-1/2 border-t border-dashed border-blue-500" />
+            <div className="ml-[50%] h-px w-1/2 border-t border-dashed border-violet-500" />
           </div>
           <div className="z-0 col-start-4 row-start-1 row-span-3 flex justify-center">
             <div className="mt-[50%] h-1/2 w-px border-l border-dashed border-white/20" />
@@ -31,7 +31,7 @@ export function LearningPathIllustration() {
             <div className="ml-[50%] h-px w-1/2 border-t border-dashed border-white/20" />
           </div>
 
-          <div className="relative z-10 col-start-2 row-start-1 flex flex-col items-center justify-center gap-1 rounded-lg border border-dashed border-blue-500 bg-black px-1 text-center text-blue-500">
+          <div className="relative z-10 col-start-2 row-start-1 flex flex-col items-center justify-center gap-1 rounded-lg border border-dashed border-violet-500 bg-black px-1 text-center text-violet-500">
             <BrainIcon className="size-8 shrink-0" />
             <span className="text-[10px] leading-tight font-medium">
               Structured

@@ -31,7 +31,7 @@ export const HeroSection = () => {
                 as="span"
                 duration={2}
                 spread={5}
-                className="whitespace-nowrap [--base-color:var(--color-blue-500)] [--base-gradient-color:var(--color-blue-300)] dark:[--base-color:var(--color-blue-500)] dark:[--base-gradient-color:var(--color-blue-300)] text-shadow-2xs"
+                className="whitespace-nowrap [--base-color:var(--color-fuchsia-500)] [--base-gradient-color:var(--color-pink-400)] dark:[--base-color:var(--color-fuchsia-500)] dark:[--base-gradient-color:var(--color-pink-400)] text-shadow-2xs"
               >
                 behind AI System
               </TextShimmer>
